@@ -1,9 +1,9 @@
-import { NativeStackScreenProps } from "@react-navigation/native-stack";
-import { Pressable, StyleSheet, View } from "react-native";
-import { cryptos } from "../data";
-import { RootStackParamList } from "../navigators/RootStackNavigator";
+import { NativeStackScreenProps } from '@react-navigation/native-stack';
+import { Pressable, StyleSheet, View } from 'react-native';
+import { cryptos } from '../data';
+import { RootStackParamList } from '../navigators/RootStackNavigator';
 
-type Props = NativeStackScreenProps<RootStackParamList, "Home">;
+type Props = NativeStackScreenProps<RootStackParamList, 'Home'>;
 
 export default function HomeScreen({ navigation }: Props) {
   return (
@@ -12,7 +12,7 @@ export default function HomeScreen({ navigation }: Props) {
         <Pressable
           style={{ marginBottom: 12 }}
           key={crypto.name}
-          onPress={() => navigation.navigate("Details", { name: crypto.name })}
+          onPress={() => navigation.navigate('Details', { name: crypto.name })}
         ></Pressable>
       ))}
     </View>
@@ -22,7 +22,7 @@ export default function HomeScreen({ navigation }: Props) {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: '#fff',
     padding: 12,
   },
 });

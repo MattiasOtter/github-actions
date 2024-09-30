@@ -4,6 +4,6 @@ export interface Crypto {
 
 export const cryptos: Crypto[] = [
   {
-    name: "Bitcoin",
+    name: 'Bitcoin',
   },
 ];
